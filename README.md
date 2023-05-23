@@ -1,4 +1,4 @@
-# Laravel 8 自訂旋轉進度條
+# Laravel 9 自訂旋轉進度條
 
 引入 rahul900day 的 laravel-console-spinner 套件來擴增自訂旋轉進度條，不斷的轉圈圈表示任務正在進行中。
 
