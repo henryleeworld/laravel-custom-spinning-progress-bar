@@ -39,13 +39,13 @@ class SendEmail extends Command
     public function handle()
     {
         $spinner = $this->spinner(1);
-        $spinner->setMessage('讀取中...');
+        $spinner->setMessage(__('Loading...'));
         $spinner->start();
-        Mail::raw('您好，歡迎光臨！', function ($message) {
-            $message->to('henryleeworld@gmail.com', '李亨利')->subject('日本第四度捐贈疫苗，外交部感謝並研議協助在台日人施打。');
+        Mail::raw(__('Hello, welcome!'), function ($message) {
+            $message->to('henryleeworld@gmail.com', '李亨利')->subject(__('Loneliness poses risks as deadly as smoking.'));
             $message->from('vqs81617@cuoly.com','VIQ 股份有限公司');
         });
-        $this->info('命令執行成功！');
+        $this->info(__('Command executed successfully!'));
         $spinner->finish();
     }
 }
