@@ -22,19 +22,7 @@ class SendEmail extends Command
     protected $description = 'Send an email to a user';
 
     /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-    /**
      * Execute the console command.
-     *
-     * @return int
      */
     public function handle()
     {
@@ -42,8 +30,8 @@ class SendEmail extends Command
         $spinner->setMessage(__('Loading...'));
         $spinner->start();
         Mail::raw(__('Hello, welcome!'), function ($message) {
-            $message->to('henryleeworld@gmail.com', '李亨利')->subject(__('Loneliness poses risks as deadly as smoking.'));
-            $message->from('vqs81617@cuoly.com','VIQ 股份有限公司');
+            $message->to('henryleeworld@gmail.com', __('Administrator'))->subject(__('Loneliness poses risks as deadly as smoking.'));
+            $message->from('googleaistudio-noreply@google.com', __('Google AI Studio'));
         });
         $this->info(__('Command executed successfully!'));
         $spinner->finish();

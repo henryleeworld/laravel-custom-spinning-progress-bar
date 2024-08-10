@@ -1,4 +1,4 @@
-# Laravel 10 自訂旋轉進度條
+# Laravel 11 自訂旋轉進度條
 
 引入 rahul900day 的 laravel-console-spinner 套件來擴增自訂旋轉進度條，不斷的轉圈圈表示任務正在進行中。
 
@@ -24,5 +24,5 @@ $ php artisan mail:send
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/a9O9uiK.gif)
+![](https://i.imgur.com/yCxfPN5.gif)
 > 旋轉進度條無法告訴使用者還要載入多久，如果用在長時間載入的情況，使用者容易覺得是程式出錯
